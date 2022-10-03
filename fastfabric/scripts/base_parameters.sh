@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+export GOPATH=/usr/local/go
 export FABRIC_ROOT=$GOPATH/src/github.com/hyperledger/fabric
 export FABRIC_CFG_PATH=${FABRIC_ROOT}/fastfabric/scripts #change this if you want to copy the script folder somewhere else before modifying it
 export PATH=$FABRIC_ROOT/.build/bin:$PATH

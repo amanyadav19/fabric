@@ -1,15 +1,17 @@
 OrdererOrgs:
 - Name: Orderer
-  Domain: ORDERER_DOMAIN
+  Domain: 
   Specs:
-    - Hostname: ORDERER_ADDRESS
+    - Hostname: fallback-fab
 PeerOrgs:
 - Name: Org1
-  Domain: PEER_DOMAIN
+  Domain: 
   EnableNodeOUs: true
   Specs:
-    - Hostname: FAST_PEER_ADDRESS
-    ENDORSERS
-    STORAGE
+    - Hostname: fallback-fab-ii
+    - Hostname: fallback-fab-iii
+    
+    - Hostname: fallback-fab-i
+    
   Users:
     Count: 1

@@ -2,7 +2,7 @@
 source base_parameters.sh
 
 export FABRIC_LOGGING_SPEC=INFO
-export CORE_PEER_MSPCONFIGPATH=${FABRIC_CFG_PATH}/crypto-config/peerOrganizations/${PEER_DOMAIN}/peers/${FAST_PEER_ADDRESS}.${PEER_DOMAIN}/msp
+export CORE_PEER_MSPCONFIGPATH=${FABRIC_CFG_PATH}/crypto-config/peerOrganizations/${PEER_DOMAIN}/peers/${FAST_PEER_ADDRESS}${PEER_DOMAIN}/msp
 
 p_addr=$(get_correct_peer_address $FAST_PEER_ADDRESS)
 export CORE_PEER_ID=${p_addr}

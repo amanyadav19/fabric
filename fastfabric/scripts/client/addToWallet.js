@@ -8,8 +8,8 @@
 const fs = require('fs');
 const { FileSystemWallet, X509WalletMixin } = require('fabric-network');
 const path = require('path');
-
-const cfgPath = path.resolve(process.env.FABRIC_CFG_PATH);
+require('dotenv').config()
+const cfgPath = '/usr/local/go/src/github.com/hyperledger/fabric/fastfabric/scripts';
 
 // A wallet stores a collection of identities
 const wallet = new FileSystemWallet('wallet');

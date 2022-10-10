@@ -5,10 +5,10 @@
 'use strict';
 
 import { FileSystemWallet, Gateway} from 'fabric-network';
-import {ProposalResponseObject,ProposalResponse} from 'fabric-network/node_modules/fabric-client'
-import fs from 'fs';
-import path from 'path';
-import exec from 'child_process'
+import {ProposalResponseObject,ProposalResponse} from 'fabric-client'
+import * as fs from 'fs';
+import * as path from 'path';
+import * as exec from 'child_process'
 
 async function main() {
     var conflictPercentage = parseInt(process.argv[6])

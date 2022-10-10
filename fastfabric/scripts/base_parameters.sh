@@ -9,7 +9,7 @@ source $FABRIC_CFG_PATH/custom_parameters.sh
 get_correct_address () {
     if [[ $1 != "localhost" ]]
     then
-        addr=$1.$2
+        addr=$1
     else
         addr=$1
     fi
